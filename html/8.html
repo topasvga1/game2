@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Styling HTML5</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </head>
+<body>
+
+<h1>My File Article</h1>
+
+<button onclick="getList()">가져오기 </button>
+<br/>
+<input type="text" name="title" placeholder="title">
+<input type="text" name="author" placeholder="author">
+<input type="text" name="isbn" placeholder="isbn">
+<button onclick="saveDB()">저장하기 </button>
+<footer>
+sdfsdfsfsdf
+</footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(function(){
+
+	var request = indexedDB.open("library");
+
+	request.onupgradeneeded = function() {
+	  // The database did not previously exist, so create object stores and indexes.
+	  var db = request.result;
+	  var store = db.createObjectStore("books", {keyPath: "isbn"});
+	  var titleIndex = store.createIndex("by_title", "title", {unique: true});
+	  var authorIndex = store.createIndex("by_author", "author");
+
+	  // Populate with initial data.
+	  store.put({title: "Quarry Memories", author: "Fred", isbn: 123456});
+	  store.put({title: "Water Buffaloes", author: "Fred", isbn: 234567});
+	  store.put({title: "Bedrock Nights", author: "Barney", isbn: 345678});
+	};
+
+	request.onsuccess = function() {
+	  db = request.result;
+	};
+
+
+});
+var saveDB= function(){
+	alert();
+	var tx = db.transaction("books", "readwrite");
+	var store = tx.objectStore("books");
+
+	store.put({title: $("input[name=title]").val(), author: $("input[name=author]").val(), isbn: $("input[name=isbn]").val()});
+
+
+	tx.oncomplete = function() {
+	  // All requests have succeeded and the transaction has committed.
+	};
+};
+var getList= function(){
+	var tx = db.transaction("books", "readonly");
+	var store = tx.objectStore("books");
+	var index = store.index("by_title");
+
+//	var request = index.openCursor(IDBKeyRange.only("Quarry Memories"));
+	var request = index.openCursor();
+	request.onsuccess = function() {
+	  var cursor = request.result;
+	  if (cursor) {
+	    // Called for each matching record.
+	    console.log(cursor.value.isbn+cursor.value.title+cursor.value.author);
+	    cursor.continue();
+	  } else {
+	    // No more matching records.
+	    console.log(null);
+	  }
+	};
+};
+
+</script>
+</body>
+</html>
+
