@@ -1,16 +1,1530 @@
-
-<HTML>
-<HEAD>
-
+<html><head><title> it.Serverchk.com </title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<base target="mainnav">
+<style>
+a:link {color:black;text-decoration:none}
+a:active {color:black;text-decoration:none}
+a:visited {color:black;text-decoration:none}
+.header {font-size:14pt;cursor:hand;color:black;}
+</style>
+<script language="JavaScript">
 
-<TITLE> Cloud it.serverchk.com </TITLE>
-</HEAD>
-<FRAMESET ColS="20%, 80%" frameborder="0" >
-<FRAME SRC=mainmenu.html NAME=l_menu target = right SCROLLING=YES>
-<FRAME SRC=./main.php NAME=right SCROLLING=YES>
-</FRAMESET>
-<NOFRAMES>
-<!--브라우져가 프레임을 지원하지 않습니다-->
-</NOFRAMES>
-</HTML>
+function parseCookie() {
+        var cookieList = document.cookie.split("; ");
+        var cookieArray = new Array();
+        for (var i=0; i < cookieList.length; i++) {
+                var name = cookieList[i].split("=");
+                cookieArray[unescape(name[0])] = unescape(name[1]);
+        }
+        return cookieArray;
+}
+
+function Mover() {
+        var ele = window.event.srcElement;
+        if (ele.tagName == "A") {
+        ele.style.textDecorationUnderline = true;
+        }
+}
+
+function Mout() {
+        var ele = window.event.srcElement;
+        if (ele.tagName == "A") {
+        ele.style.textDecorationUnderline = false;
+        }
+}
+
+function openClose(X) {
+                var ray = new Array(1,3,5,7,9,11,13,15,17,19);
+                if (ttable.rows[ray[X-1]].style.display == "") {
+                        ttable.rows[ray[X-1]].style.display = "none";
+                        document.images[X-1].src="image/menu_plus.gif";
+                        document.cookie = "" + ttable.rows[ray[X-1]].id + "=hidden; expires=Saturday, 23-Oct-2000 07:00:00 GMT";
+                }
+                else {
+                        ttable.rows[ray[X-1]].style.display = "";
+                        document.images[X-1].src="image/menu_minus.gif";
+                        document.cookie = "" + ttable.rows[ray[X-1]].id + "=hidden; expires=Saturday, 23-Oct-1909 07:00:00 GMT";
+                }
+                window.event.cancelbubble = true;
+}
+
+function Loader() {
+        var cookie = parseCookie();
+	        if (cookie.section1 == "hidden") {/*document.images[0].src="image/menu_plus.gif";*/ section1.style.display = "none";}
+	        if (cookie.section2 == "hidden") {/*document.images[1].src="image/menu_plus.gif";*/ section2.style.display = "none";}
+	        if (cookie.section3 == "hidden") {/*document.images[2].src="image/menu_plus.gif";*/ section3.style.display = "none";}
+	        if (cookie.section4 == "hidden") {/*document.images[3].src="image/menu_plus.gif";*/ section4.style.display = "none";}
+	        if (cookie.section5 == "hidden") {/*document.images[4].src="image/menu_plus.gif";*/ section5.style.display = "none";}
+	        if (cookie.section6 == "hidden") {/*document.images[5].src="image/menu_plus.gif";*/ section6.style.display = "none";}
+	        if (cookie.section7 == "hidden") {/*document.images[6].src="image/menu_plus.gif";*/ section7.style.display = "none";}
+	        if (cookie.section8 == "hidden") {/*document.images[7].src="image/menu_plus.gif";*/ section8.style.display = "none";}
+	        if (cookie.section9 == "hidden") {/*document.images[8].src="image/menu_plus.gif";*/ section9.style.display = "none";}
+	        if (cookie.section10 == "hidden") {/*document.images[9].src="image/menu_plus.gif";*/ section10.style.display = "none";}
+}
+</script>
+</head>
+<body bgcolor="#dcdcdc" leftmargin="5" topmargin="5" onload="Loader();" 
+  onmouseover="Mover()" onmouseout="Mout()" text="black"
+  aoncontextmenu="JavaScript:{return false;}">
+<table>
+<tr><td height=10> Master seo Workspace  </td> </tr>
+</table>
+<table border="0" Xwidth="100%" cellspacing="1" id=ttable>
+
+<! -- AWS Cloud    -- > 
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(1);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(1);"><font face="arial" size="3" >
+                                  AWS Cloud   
+                                </font>
+                        </td>
+                </tr>
+	
+              <! --    <tr id="section6" style="display:none;">   -->
+             <tr id="section6" style="display:hidden;">   
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                <a href="https://brunch.co.kr/@topasvga/76" target="right">2.Basic Word </a><br>
+                <a href="https://brunch.co.kr/@topasvga/77" target="right">3.Free </a><br>
+                <a href="https://brunch.co.kr/@topasvga/78" target="right">4.Money </a><br>
+                <a href="https://brunch.co.kr/@topasvga/79" target="right">5. VPC,ELB,Route53 </a><br>
+                <a href="https://brunch.co.kr/@topasvga/80" target="right">6. AWS Service </a><br>
+                <a href="https://brunch.co.kr/@topasvga/81" target="right">7 VPC  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/82" target="right">8.NAT </a><br>
+                <a href="https://brunch.co.kr/@topasvga/83" target="right">9. Apache Web Server </a><br>
+                <a href="https://brunch.co.kr/@topasvga/84" target="right">10. Site Make  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/85" target="right">11. Route53 Vs DNS   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/86" target="right">12. Route53 Start   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/87" target="right">13. Route53 NS  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/88" target="right">14. Route53 Monitoring </a><br>
+                <a href="https://brunch.co.kr/@topasvga/89" target="right">15. Route53 Active-Active </a><br>
+                <a href="https://brunch.co.kr/@topasvga/90" target="right">16. Route53 Active-Backup  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/91" target="right">17. Route53 GeoLocation  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/92" target="right">18. Route53 www GSLB  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/93" target="right">19. s3 Web Site  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/94" target="right">20. CloudFront </a><br>
+                <a href="https://brunch.co.kr/@topasvga/95" target="right">21. Software MFA , Google OTP  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/96" target="right">22. Money  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/97" target="right">23. Hardware MFA  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/175" target="right">24. Route53 S3 Site  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/176" target="right">25. CloudFront  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/228" target="right">26. Route53 YouTube  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/273" target="right">27. NS, Route53  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/290" target="right">28. Cloud Move </a><br>
+                <a href="https://brunch.co.kr/@topasvga/283" target="right">29. AWS CERT </a><br>
+                <a href="https://brunch.co.kr/@topasvga/292" target="right">30. Domain Buy </a><br>
+                <a href="https://brunch.co.kr/@topasvga/233" target="right">31. AWS Arch Cert </a><br>
+                <a href="https://brunch.co.kr/@topasvga/330" target="right">32. AWS Sysops Cert </a><br>
+                <a href="https://brunch.co.kr/@topasvga/333" target="right">33. AWS Start Word  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/297" target="right">34. Mobile Homepage </a><br>
+                <a href="https://brunch.co.kr/@topasvga/336" target="right">35. NS Route53  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/338" target="right">36. Site Moce to AWS  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/342" target="right">37. AWS Delete </a><br>
+                <a href="https://brunch.co.kr/@topasvga/344" target="right">38. Mobile Homepage , CLI  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/345" target="right">39. Mobile HomePage CLI2  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/348" target="right">40. VPC Peering </a><br>
+                <a href="https://brunch.co.kr/@topasvga/349" target="right">41. SNS CloudWatch  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/350" target="right">42. Eng Name Site Make 1  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/352" target="right">43. AMI , ELB  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/353" target="right">44. Consolidated Billing </a><br>
+                <a href="https://brunch.co.kr/@topasvga/356" target="right">45. AutoScaling  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/362" target="right">46. isms network  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/384" target="right">47. aws start site   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/385" target="right">48. web site   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/386" target="right">49. web site  Network  cli  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/387" target="right">50. image rekognition  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/388" target="right">51. vpn  Network  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/389" target="right">52. voice polly   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/392" target="right">53. dev network1 , 2  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/393" target="right">54. dev  Network 3  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/409" target="right">55. cetification arch pro   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/419" target="right">56. lb acm </a><br>
+                <a href="https://brunch.co.kr/@topasvga/391" target="right">57. basic word 30  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/480" target="right">58. auto scaling 2019.03  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/481" target="right">59. iam   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/487" target="right">60. money   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/488" target="right">61. end point   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/491" target="right">62. ssm 1 </a><br>
+                <a href="https://brunch.co.kr/@topasvga/492" target="right">63. ssm 2 </a><br>
+                <a href="https://brunch.co.kr/@topasvga/493" target="right">64. emr  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/496" target="right">65. awskrug   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/497" target="right">66. vmware  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/498" target="right">67. opsnow server optimize  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/499" target="right">68. opensoure consulting  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/500" target="right">69. cloudflare , security  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/501" target="right">70. new relic , monitoring solution   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/502" target="right">71. dell emc backup solution   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/503" target="right">72. hancom workdocs   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/504" target="right">73. young aws education   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/505" target="right">74. accenture   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/506" target="right">75. pure storage  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/507" target="right">76. sk infosec  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/508" target="right">77. ahnlab security   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/509" target="right">78. zadara storage </a><br>
+                <a href="https://brunch.co.kr/@topasvga/510" target="right">79. lg cns , cloud total   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/511" target="right">80. fortinet , security   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/512" target="right">81. cisco   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/513" target="right">82. woongjin , sap   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/514" target="right">83. free market   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/515" target="right">84. manTech drm  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/516" target="right">85. deep racer   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/517" target="right">86. elatic search   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/518" target="right">87. nets , account solution   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/519" target="right">88. acronis, backup soultion   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/520" target="right">89. sendbird , chatting soultion  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/521" target="right">90. hancom mds , big data   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/522" target="right">91. 42maru, chat bot ,text   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/523" target="right">92. Panzure NAS solution   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/524" target="right">93. PNP secure , db safer  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/525" target="right">94. wandisco, live data   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/526" target="right">95. service - talk with other language   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/527" target="right">96. im cloud chat bot  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/528" target="right">97. Luniverse block chain   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/529" target="right">98. f5 web firewall   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/530" target="right">99. open base , secure solution  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/531" target="right">100. kinx, direct connect   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/532" target="right">101. lotte , open soucre monitorion, BI Solution  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/533" target="right">102. securei   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/534" target="right">103. trend micro , hibrid cloud security  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/535" target="right">104. samsung sds , gpu   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/536" target="right">105. veeam, backup  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/537" target="right">106. exntu, data visuallization   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/538" target="right">107. GoodusData, Monitoring   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/539" target="right">108. Quest, Oracle Migration  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/540" target="right">109. Rainist, Back Salerd  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/541" target="right">110. URBAN BASE, data platform   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/542" target="right">111. iot  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/543" target="right">112. aws summit booth   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/544" target="right">113. dream us , flo  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/545" target="right">114. aws cert -summit  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/547" target="right">115. cosole move ssm   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/558" target="right">116. CloudWatch Basic monitoring   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/567" target="right">117. SES  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/568" target="right">118. SES   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/570" target="right">119. SES   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/571" target="right">120. SES  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/612" target="right">121. SSL , certification Manager  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/615" target="right">122. CloudWatch Agent  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/616" target="right">123. CloudWatch Dashboards </a><br>
+                <a href="https://brunch.co.kr/@topasvga/617" target="right">124. Cloud watch Alarm   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/618" target="right">125. CloudWatch Agent log Collect   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/628" target="right">126. RDS  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/627" target="right">127. CloudWatch Events   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/629" target="right">128. Elasti Cache   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/630" target="right">129.Personal Health Dashboard k  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/631" target="right">130.Trust Advisor  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/632" target="right">131.CloudTrail  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/633" target="right">132.inspector  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/641" target="right">133.AWS EC2  login script  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/642" target="right">134.Cloud9  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/643" target="right">135.CloudDeploy  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/644" target="right">136.Secret Manager  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/645" target="right">137.S3 Homepage   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/646" target="right">138.Direct Connect   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/651" target="right">139.Lambda  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/652" target="right">140.API Gateway   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/655" target="right">141.SMS, lambda   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/656" target="right">142.web event, lambda  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/657" target="right">143.s3 event, lambda  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/661" target="right">144. AWS - IDC Connect VPN  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/662" target="right">145. VPC Flow log  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/671" target="right">146. route53 - domain move  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/682" target="right">147. S3 bucket manage  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/683" target="right">148. login ip limite   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/687" target="right">149. SFTP   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/688" target="right">150. SFTP2   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/694" target="right">151. cloudtail   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/695" target="right">152. windows ec2   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/696" target="right">153. rds    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/697" target="right">154. s3 cdn   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/698" target="right">155. ilightsail  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/699" target="right">156. iam mfa   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/700" target="right">157. aws config  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/709" target="right">158. dev day 2019  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/713" target="right">159. glue  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/715" target="right">160. network 101   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/716" target="right">161. route53 domain move   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/724" target="right">162. cli s3 upload   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/725" target="right">163. games on aws 2019    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/727" target="right">164. aws techshift    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/733" target="right">165. network basic     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/734" target="right">166. lambda,ses  techshift    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/735" target="right">167. s3 upload, lambda , s3 download  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/741" target="right">168. quick sight    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/742" target="right">169. elastic beanstalk    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/743" target="right">170. mysql rds   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/745" target="right">171. alb elb    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/746" target="right">172. cloudfront    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/747" target="right">173. cli vpc, subnet   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/748" target="right">174. cloudformation vpc     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/749" target="right">175. isms-account security   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/750" target="right">176. isms-account    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/751" target="right">177. isms-network     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/752" target="right">178. isms-db security  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/753" target="right">179. isms-storage security   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/755" target="right">180. secret manager ,kms   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/756" target="right">181. organization   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/757" target="right">182. SecurityGroup Nacl  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/758" target="right">183. route53 private dns   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/759" target="right">184. ansible   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/770" target="right">186. vpc,alb   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/771" target="right">187. autoscaling   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/772" target="right">188. s3 bucket   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/773" target="right">189. s3 homepage,cdn   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/774" target="right">190. s3 thumbnail   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/775" target="right">191. lambda, slack   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/776" target="right">192. autoscaling + sever add   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/780" target="right">193. terraform vpc    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/815" target="right">194. aws quick start     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/818" target="right">195. aws krug 2020    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/824" target="right">196. poilcy role create    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/825" target="right">197. rds create     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/827" target="right">198. transit gateway      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/830" target="right">199. visit service 1      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/831" target="right">200. visit service 2      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/836" target="right">201. passrole      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/837" target="right">202. s3 envent , apigw     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/838" target="right">203. isms-p       </a><br>
+                <a href="https://brunch.co.kr/@topasvga/839" target="right">204. savins plans , ri      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/840" target="right">205. money       </a><br>
+                <a href="https://brunch.co.kr/@topasvga/841" target="right">206. mp4     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/842" target="right">207. landing zone      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/844" target="right">208 storagegateway      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/845" target="right">209. aws iot      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/666" target="right">210. aws books     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/863" target="right">211. account money      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/872" target="right">212. aws cli make server      </a><br>
+                <a href="https://brunch.co.kr/@topasvga/873" target="right">213. aws ansible    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/874" target="right">214. aws network     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/875" target="right">215. aws config     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/876" target="right">216. assume role    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/979" target="right">217 sec - s3 bucket sec     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/980" target="right">218 sec - cloudtrail log ,kms cms    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/981" target="right">219 sec - personal info ,waf url filter    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/982" target="right">220 sec - inspector guardduty   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/983" target="right">221 sec ec2 abuse   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/984" target="right">222 sec compliance artifact   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/985" target="right">223 sec pii personallly identificable information , macie  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/986" target="right">224 sec iam role ,sqs    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/987" target="right">225 sec iam policy, cloudwatch metricdata  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/988" target="right">226 sec subnet , network acl , nacl   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/989" target="right">227 sec ip packet , proxy   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/990" target="right">228 sec  nacl  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/991" target="right">229 sec kms , cmk, rotating master keys  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/992" target="right">230 sec athena , cloudtrail   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/993" target="right">231 sec cloudwatch log , os log rotating , cloudformateion   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/994" target="right">232 sec kms  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/995" target="right">233 sec cmk , rotating master keys  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/996" target="right">234 sec kinesis data anlytics  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/997" target="right">235 sec aws ad , ad group, iam role , trust  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/998" target="right">236 sec rds , auth , secret manager , role  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/999" target="right">237 sec cloudfront , certificate manager    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1000" target="right">238 sec ad , iam roles  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1001" target="right">239 sec certificate manager , elb   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1002" target="right">240 sec kms , key rotate , mfa , cmk , sse-kms   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1003" target="right">241 sce  ad , trust  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1004" target="right">242 sec  kms policy  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1005" target="right">243 sec  many security group , nacl , os iptables </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1006" target="right">244 sec  vault  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1007" target="right">245 sec  ec2 lb , alb , https listener  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1008" target="right">246 sec  application log monitoring , s3 , s3 event trigger , lambda, cloudwatch log </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1009" target="right">247 sec pii, network , vpn, storage gateway    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1011" target="right">248 sec root account , organization , ou   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1012" target="right">249 sec athena permisstion  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1013" target="right">250 sec secret manager  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1014" target="right">251 sec  ec2 monitoring, cloudtrail vpc flow security group  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1015" target="right">252 sec ec2 create using ami , check , aws config rule </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1016" target="right">253 sec ssm cmk   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1017" target="right">254 sec cloudtrail config log ,  s3 , s3 pemission , s3 bucket name   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1018" target="right">255 sec  multi account , resource , assume role   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1019" target="right">256 sec realtime log analysis , kinesis  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1020" target="right">257 sec iam inspection , aws config  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1021" target="right">258 sec cloudfront , s3 bucket policy  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1022" target="right">259 sec aws account manage , organizations   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1023" target="right">260 sec cmk , key rotate   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1024" target="right">261 sec access-key monitoring  , cloud trail    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1025" target="right">262 sec root new api create monitoring , cloudwatch, cloudtrail  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1026" target="right">263 sec resouce access monitoring , cloudtrail  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1027" target="right">264 sec mobile auth , openid , cognito   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1028" target="right">265 sec 3th patt audit tool , cross account , aduit check , assume role  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1029" target="right">266 sec cloudwatch log agent   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1030" target="right">267 sec access-key check , aws console   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1031" target="right">268 sec cmk ,ses limit , iam policy   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1032" target="right">269 sec ec2 protect , private , alb ,waf   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1033" target="right">270 sec application log collect , cloudwatch log agent   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1034" target="right">271 sec clb , alb, auth   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1035" target="right">272 sec create kms key policy   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1036" target="right">273 sec api call monitoring , cloudtrail   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1037" target="right">274 sec iot auth , system manager , kms   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1038" target="right">275 sec application protect , nacl   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1039" target="right">276 sec ec2   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1040" target="right">277 sec web server connect , security group , alb    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1041" target="right">278 sec ses, smtp endpoint , email-smtp 587  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1042" target="right">279 sec api monitoring , cloudtrail, kinesis , lambda   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1043" target="right">280 sec date manage , s3 vpc endpoint , white list , nacl   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1044" target="right">281 sec notebook lost , pem key lost , ec2 pem key change , ec2 run command  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1045" target="right">282 sec nacl, security group check , vpc flow logs , athena   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1046" target="right">283 sec cognito  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1047" target="right">284 sec cmk , aad , key policy , iam group  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1048" target="right">285 sec cmk, s3 api access , iam policy    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1049" target="right">286 sec guardduty  alarm reduce  , trust ip list , alarm  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1050" target="right">287 sec s3a data manage , cmk, cross-account access ,  kkms , api   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1051" target="right">288 sec s3 access controle , iam pilicy s3 control   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1052" target="right">289 sec ec2 keypair , aws console , cloudwatch log , aws log filter  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1053" target="right">290 sec s3, data , kms , sse-kms   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1054" target="right">291 sec 3 compnay , access control, tcp 444 , privatelink endpoint ,444 permit  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1055" target="right">292 sec s3 kms cmk , cmk policy , s3 bucket , iam policy    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1056" target="right">293 sec cloudtrail log ckeck    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1057" target="right">294 sec kms decryption ,use decryption api   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1058" target="right">295 sec change noti , guardduty   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1059" target="right">296 sec s3 secure data transfer ,kms , bucket policy  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1060" target="right">297 sec federation auth   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1061" target="right">298 sec  vpc container tls , acm pca   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1062" target="right">299 sec  ec2 alb , waf  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1063" target="right">300 sec  s3 , key delete , kms , dele key api </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1064" target="right">301 sec  s3 access denied 403 , kms , s3 policy , iam role  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1065" target="right">302 sec  ec2 kms , kms api , vpc endpoint , kms cmk , iam  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1066" target="right">303 sec  database auth , system manager parameter store  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1067" target="right">304 sec  ec2 , data , vpc private , no eip  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1068" target="right">305 sec userdata script , ami , kms    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1069" target="right">306 sec s3 encryption , server side encryption sse-kms    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1070" target="right">307 sec application ,auth , private certification auth  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1071" target="right">308 sec lambda - cloudwatch log , permission   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1072" target="right">309 sec s3 data , key rotate , s3 kms, cmk , 1 year cmk    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1073" target="right">310 sec application head add, use lambda   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1074" target="right">311 sec ec2 cloudwatch , cloudwatch log agent check   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1075" target="right">312 sec s3 encryptiom, access , s3 bucket policy   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1076" target="right">313 sec http flooding attck , waf , rate-base role   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1077" target="right">314 sec ec2 , application attck , security , inspector check   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1078" target="right">315 sec rds , minium downtime , secret manager auto rotate , permission    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1079" target="right">316 sec high ha , aws cloudHSM   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1080" target="right">317 sec cloudtail log event , security group change event , cloudwatch dashboard   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1081" target="right">318 sec create accesskey alarm , cloudwatch alarm check   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1082" target="right">319 sec parameterstore database encryption, ssm.amazonaws.com policy update , kms key, kme:decrypt   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1083" target="right">320 sec s3 data encryption, s3 bucket policy , s3:getobject   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1084" target="right">321 sec 1111 port data , cloudwatch custom metric , vpc flow log , network acl   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1085" target="right">322 sec s3 bucket policy   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1086" target="right">323 sec ebs volume data delete , os delete , ebs format  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1087" target="right">324 sec cloudtrail s3 , s3 bucket   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1088" target="right">325 sec s3 cmk encryptiom s3 upload , s3ccopy  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1089" target="right">326 sec elb, ec2 error , elb , ec2 shutdown   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1090" target="right">327 sec https clustim tls , clodfront , rsa public key    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1091" target="right">328 sec  region , aws limite , condition, stringequals , ec2:region   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1092" target="right">329 sec  waf trigger , cloudfront , alb  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1093" target="right">330 sec  root secrrity , nwe iam admin , mfa  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1094" target="right">331 sec  security  , security group , nacl , public subnet  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1095" target="right">332 sec  cloudfront s3 bucket access , oai origin access indentity  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1096" target="right">333 sec  remote access , vpn  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1097" target="right">334 sec  ec2 file change check , clodwatch log , sns  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1098" target="right">335 sec  ad , iam role ad , saml , trust </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1099" target="right">336 sec  cmk delete  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1100" target="right">337 sec  security group 0.0.0.0/0 , nacl   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1101" target="right">338 sec  cmk , net cmk , kms key manage iam  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1102" target="right">339 sec  log edit check , cloudtrail , kms log encryption  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1103" target="right">340 sec  3th aws use , external id , sts:external  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1105" target="right">341 sec  ping , flow log reject, nacl     </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1106" target="right">342 sec  vpci change monitoring , aws config , cloudwatch event   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1107" target="right">343 sec  web autj, api call , saml, cognito  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1108" target="right">344 sec  s3 bucket , bucket/* </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1109" target="right">345 sec  region limite , alarm , cloudtrail log alarm  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1110" target="right">346 sec  kms , aws network , no public , ksm sourceVpce , vpc endpoint , kms , private dns  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1111" target="right">347 sec  command and control server , guardduty  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1112" target="right">348 sec  ec2 , iptables  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1113" target="right">349 sec  root , admin iam mfa , ksm , 30 day rotate  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1114" target="right">350 sec  cloudtrail log , ksm key policy , iam permisstion   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1010" target="right">351 sec  cmk iam , kms policy   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1118" target="right">352 sec  isms-p check list    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1124" target="right">353. sec aws sec total,all   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1125" target="right">354. service start!   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1126" target="right">355. mariadb 1   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1127" target="right">356. sec- security,identity    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1128" target="right">357. sec- management & governance   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1145" target="right">358. s3    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1146" target="right">359. iot    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1147" target="right">360. iot   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1149" target="right">361. iot </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1150" target="right">362. iot   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1151" target="right">363. iot   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1152" target="right">364. cloudwatch security group   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1153" target="right">365. dynamodb    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1154" target="right">366. elb   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1155" target="right">367. mediaconvert    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1156" target="right">368. mediaconvert serverless   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1157" target="right">369. device farm    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1158" target="right">370. rds mysql    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1159" target="right">371. rds mysql migration    </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1160" target="right">372. apigateway   </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1161" target="right">373. lambda thumbnail  </a><br>
+                <a href="https://brunch.co.kr/@topasvga/1162" target="right">374. kms    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1163" target="right">375 cloudftont, statoc 374. kms    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1164" target="right">376 cloud basic     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1165" target="right">377 kinesis    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1166" target="right">378 dynamodb 1   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1167" target="right">379 dynamodb 2    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1168" target="right">380 dynamodb3     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1169" target="right">381 ec2 media upload   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1170" target="right">382 cloudformation s3 elb   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1171" target="right">383 cloudformation vpc     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1172" target="right">384 cloudformation web db     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1173" target="right">385 aws cli     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1174" target="right">386 security iam     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1175" target="right">387 aurora migration  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1176" target="right">388 cloudwatch sns lambda slack     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1177" target="right">389 serverless check   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1178" target="right">390 live streaming cloudwatch     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1179" target="right">391 medialive image insert     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1180" target="right">392 elasticsearch    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1182" target="right">393 codecommit git     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1183" target="right">394 ecs ec2    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1184" target="right">395 elasticache windows    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1185" target="right">396 codedeploy    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1186" target="right">397 text to voice polly    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1187" target="right">398  lex bot 1    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1188" target="right">399 bot 2     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1189" target="right">400 medialive mediastore cloudfront   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1190" target="right">401 ecr    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1191" target="right">402 elasticache linux     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1192" target="right">403 adfs    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1193" target="right">404 opsworks     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1195" target="right">405 redshift dw    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1196" target="right">406 cloudfront designer    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1199" target="right">407 aurora    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1200" target="right">408 kinesis data firehose    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1201" target="right">409 assume role , pass role    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1202" target="right">410 all - aws middle start - all   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1204" target="right">411 mission web media server make    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1205" target="right">412 service catalog     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1206" target="right">413 s3 homepage    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1207" target="right">414 cloudfront dynamic    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1208" target="right">415 network manager cloudwatch   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1211" target="right">416 pic aws ppt    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1212" target="right">417 config security group monitoring    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1213" target="right">418 iam s3    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1214" target="right">419 cloudwatch log insights    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1215" target="right">420 inspector    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1216" target="right">421 aws basic check   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1217" target="right">422 efs     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1218" target="right">423 ebs   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1219" target="right">424 datasync storage gateway    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1220" target="right">425 vpc log elasticsearch    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1221" target="right">426 transit gateway tip     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1222" target="right">427 kinesis firehose    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1223" target="right">428 storage gateway   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1224" target="right">429 serverless lambda apigateway    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1225" target="right">430 medialive insert image    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1226" target="right">431  emr kms client site encryption    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1227" target="right">432  media service ai service    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1228" target="right">433 bigdata emr     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1229" target="right">434 emr google nrams  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1230" target="right">435 ecs docker cli   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1231" target="right">436 redshift tableau    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1232" target="right"> 437 elastic beanstalk    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1233" target="right"> 438. machine learning sagemaker   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1234" target="right"> 439. medialive mediapackage    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1235" target="right"> 440. mediatailor  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1236" target="right"> 441. elastic beanstalk, cli   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1237" target="right"> 442. storage gateway   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1238" target="right"> 443. lightsail  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1239" target="right"> 444. aws batch   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1240" target="right"> 445. landing zone install   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1241" target="right"> 446. cloudwatchEvent  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1243" target="right"> 447. s3  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1245" target="right"> 448. network miioring   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1246" target="right"> 449. server move    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1257" target="right"> 450. role   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1259" target="right"> 451. role     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1283" target="right"> 452. it.serverchk.com     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1284" target="right"> 453. redshift 1     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1285" target="right"> 454. redshift monitor     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1288" target="right"> 455. iam     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1289" target="right"> 456. organization     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1290" target="right"> 457. 1th - ec2 faq 8/1     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1291" target="right"> 458. ecs 1/1     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1292" target="right"> 459. region,network 1/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1293" target="right"> 460. idc vpn dx 2/12    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1295" target="right"> 461. aws cli 3/12  </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1296" target="right"> 462. system manager, cf opsworks 4/12    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1297" target="right"> 463. securitygroup 5/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1298" target="right"> 464. ec2 6/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1299" target="right"> 465. storage 7/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1300" target="right"> 466. cloudwatch  8/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1301" target="right"> 467. cloudtrail , config ecs 9/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1302" target="right"> 468. tag , money 10/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1303" target="right"> 469. automation 11/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1307" target="right"> 470. lb, auto scaling 12/12     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1308" target="right"> 471. money     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1309" target="right"> 472. 2th - ip , cf  2/8     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1310" target="right"> 473. data - collect 1/7    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1311" target="right"> 474. data- kinesis 2/7     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1312" target="right"> 475. data - storage,database 3/7     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1316" target="right"> 476. 3th - vpc endpoint 3/8    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1317" target="right"> 477. data- athena, emr 4/7    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1318" target="right"> 478. data - spark, glue 5/7     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1319" target="right"> 479. data - redshift 6/7     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1320" target="right"> 480. data - view 7/7   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1321" target="right"> 481. arch - storage,server, database 1/3     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1322" target="right"> 482. sec - iam 1/5   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1323" target="right"> 483. sec - waf 2/5    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1324" target="right"> 484. sec - shiedl 3/5     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1325" target="right"> 485. sec - detectice 4/5      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1326" target="right"> 486. sec - guard duty 5/5   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1327" target="right"> 487. ri, savings plan 1/1      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1328" target="right"> 488. vpc , transitgateway
+				<a href="https://brunch.co.kr/@topasvga/1329" target="right"> 489. arch - vpn,x,vpn peering      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1330" target="right"> 490. arch - iam, cloudwatch      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1331" target="right"> 491. arch - dr     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1332" target="right"> 492. iam - best iam    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1333" target="right"> 493. cloudtrail , kms    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1334" target="right"> 494. 4th - elb, route53    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1336" target="right"> 495. 5th - ga, cloudfront      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1337" target="right"> 496. 6th -  vpc peering ,vpn   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1338" target="right"> 497. 7th transit gateway     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1339" target="right"> 498. private link       </a><br>
+				<a href="https://brunch.co.kr/@topasvga/42" target="right"> 499. aws basic      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1340" target="right"> 500. 8th security group , network acl      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1341" target="right"> 501. money        </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1342" target="right"> 502. tgw peering ep eps        </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1343" target="right"> 503. tgw tgw ep eps      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1344" target="right"> 504. 9th multi resion     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1346" target="right"> 505. book serverless lambda   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1347" target="right"> 506. book developer      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1348" target="right"> 507. book network      </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1349" target="right"> 508. book devops     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1350" target="right"> 509. cloudwatch   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1352" target="right"> 510. snapshot move , backup    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1353" target="right"> 511. cross account assume   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1354" target="right"> 512. cross account , instance     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1355" target="right"> 513. iam mfa cloud trail     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1356" target="right"> 514. nacl security group     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1357" target="right"> 515. guard duty    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1358" target="right"> 516. kms    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1359" target="right"> 517. aws config, s3 security   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1360" target="right"> 518. ecs, eks    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1361" target="right"> 519. service catalog    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1362" target="right"> 520. web log , kinesis agent    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1363" target="right"> 521. security group , ecs    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1364" target="right"> 522. (sum) aws network    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1365" target="right"> 523. reachablility analyzer    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1366" target="right"> 524. artifact    </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1370" target="right"> 525. cloud front   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1371" target="right"> 526. cloudformation vpc     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1372" target="right"> 527. cloudformation alb </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1373" target="right"> 528. cloudformation ec2 rds add     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1374" target="right"> 529. cloud shell     </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1375" target="right"> 530. devops tools   </a><br>
+				<a href="https://brunch.co.kr/@topasvga/1386" target="right"> 531. mra migration    </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1388" target="right"> 532. cloudformation natgw   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1414" target="right"> 533. book finops   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1416" target="right"> 534. system engineer , aws ,people ,job   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1418" target="right"> 535. rein-new ec2  </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1419" target="right"> 536. rein- new storage  </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1420" target="right"> 537. rein - serverless new  </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1422" target="right"> 538. rein - container new   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1423" target="right"> 539. rein - tool , mgmt   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1424" target="right"> 540. rein - ml , machine learning  </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1425" target="right"> 541. rein - sagemaker new   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1426" target="right"> 542. rein - hybrid   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1427" target="right"> 543. rein - bigdata </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1440" target="right"> 544. rein all - all new   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1441" target="right"> 545. basic - database, network , security   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1442" target="right"> 546. migration   </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1443" target="right"> 547. security  </a><br>				
+				<a href="https://brunch.co.kr/@topasvga/1444" target="right"> 548. basic - vpc </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1445" target="right"> 549. basic - compute </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1446" target="right"> 550. basic - databse </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1447" target="right"> 551. basic - storage  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1449" target="right"> 552. rein - new  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1530" target="right"> 553. trouble - ec2 down   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1535" target="right"> 554. aws az 3 service   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1536" target="right"> 555. network firewall   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1544" target="right"> 556. iam - all  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1549" target="right"> 557. iam   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1550" target="right"> 558. aws - all work  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1551" target="right"> 559. access anlyzer   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1552" target="right"> 560. access advisor  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1553" target="right"> 561. auto scaling - cli   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1558" target="right"> 562. lb- all  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1573" target="right"> 563. s3 privatelink  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1574" target="right"> 564. aws basic   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1575" target="right"> 565. aws database basic   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1576" target="right"> 566. ri, savings plan - all  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1577" target="right"> 567. homepage make - all   </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1581" target="right"> 568. cloudwatch - all  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1589" target="right"> 569. routge53 private dns , datadog </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1590" target="right"> 570. alarm,cloudwatch,chatbot </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1594" target="right"> 571. autoscaling - all </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1595" target="right"> 572. ecs- all </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1596" target="right"> 573. rds - all </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1597" target="right"> 574. dynamodb - all </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1598" target="right"> 575. kb- aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1599" target="right"> 576. kb - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1602" target="right"> 577. shinhan - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1613" target="right"> 578. hanhwa - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1614" target="right"> 579. mydata - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1617" target="right"> 580. media - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1618" target="right"> 581. media- low time live aws</a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1619" target="right"> 582. media - live streaming aws  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1620" target="right"> 583. media - sm aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1621" target="right"> 584. media - inter aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1622" target="right"> 585. media - megazone aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1623" target="right"> 586. media - sm aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1624" target="right"> 587. samsung - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1625" target="right"> 588. storage - aws </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1626" target="right"> 589. aws tip  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1633" target="right"> 590. redshift - all </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1634" target="right"> 591. kinesis - all </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1627" target="right"> 592. aws start </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1628" target="right"> 593. aws network start </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1629" target="right"> 594. aws ecs start </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1630" target="right"> 595. aws security start -1 </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1650" target="right"> 1-1 aws eks - cloud9  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1651" target="right"> 1-2 aws eks - docker, ecr  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1653" target="right"> 1-4 aws eks - container insight  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1654" target="right"> 1-5 aws eks - node show  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1655" target="right"> 1-6 aws eks - pod autoscaling  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1679" target="right"> aws eks - all  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1680" target="right"> 1-7 aws eks - cloudter autoscaling  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1652" target="right"> 1-3 aws eks - cluster create </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1692" target="right"> 2-1 aws eks - cloud9  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1693" target="right"> 2-2 aws eks - cluster create  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1694" target="right"> 2-3 aws eks - helm  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1695" target="right"> 2-4 aws eks - wordpress  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1696" target="right"> 2-5 aws eks - agnet , monitoring  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1697" target="right"> 2-6 aws eks - load test , monitoring </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1698" target="right"> 2-7 aws eks - argocd  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1699" target="right"> 2-8 aws eks - argocd app deployment  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1700" target="right"> 2-9 aws eks - argocd app update  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1701" target="right"> 2-10 aws eks -argocd deployment delete  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1702" target="right"> 2-11 aws eks - eks delete  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1704" target="right"> 3-1 aws eks - cloud9  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1705" target="right"> 3-2 aws eks - dashboard  </a><br>			
+				<a href="https://brunch.co.kr/@topasvga/1706" target="right"> 3-3 aws eks - helm, nginx   </a><br>			
+				
+				
+								
+				
+				
+				
+                        </td>
+                                </font>
+                        </td>
+                </tr>
+
+
+
+
+<! -- Google   -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(2);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(2);"><font face="arial" size="3" >
+                                      Google Cloud   
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section5" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                        <a href="https://brunch.co.kr/@topasvga/168" target="right">1. Google Cloud Login  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/169" target="right">2. dns   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/265" target="right">3. honepage   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/266" target="right">4. network  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/554" target="right">5. gaming on google cloud   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/559" target="right">6. 2019 next recap   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/560" target="right">7. 2019 netxt recap 2  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/561" target="right">8. hybrid cloud   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/562" target="right">9. container , hybrid cloud  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/563" target="right">10. ku  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/564" target="right">11. security   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/565" target="right">12. log  collect  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/710" target="right">13. gcp account close </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/711" target="right">14. gcp mfa   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/712" target="right">15. cloud dns 2019  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/728" target="right">16. gcp exam study   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/731" target="right">17. google cloud start   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/754" target="right">18. Google Summit 2019 Company   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/777" target="right">19. mission1 VPC : Pub,Pri,DB VPC   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/778" target="right">20. mission2 cloud lb   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/785" target="right">21. mission3 loud Storage   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/786" target="right">22. mission4 cloud lb   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/787" target="right">23. mission5 cloud function1   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/788" target="right">24. mission6 cloud function2   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/793" target="right">25. 2 auth    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/794" target="right">26. Vm Instance    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/795" target="right">27. teraform vpc    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/796" target="right">28. ku    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/797" target="right">29. cloud Study   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/826" target="right">30. quick study    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/853" target="right">31. google books     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/854" target="right">32. 1. vm      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/855" target="right">33. 2. firewall rule      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/856" target="right">34. 3. lb      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/857" target="right">35. 4. auto scaling    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/858" target="right">36. 5. vpc  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/859" target="right">37. 6. gcs cloud storage    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/860" target="right">38. 7. monitoring stackdriver     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/864" target="right">39. 8. cloud function serverless      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/865" target="right">40. 9.cloud vision   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/866" target="right">41. 10.gcloud cli   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/867" target="right">42. 11.cloud sql    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/880" target="right">43 net bgp     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/881" target="right">44 net dedicate interconnect     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/882" target="right">45 net vpc    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/883" target="right">46 net firewall rule     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/884" target="right">47 net stackdrive log    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/885" target="right">48 net gcp routing     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/886" target="right">49 net managed instance    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/887" target="right">50 net lb backend    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/888" target="right">51 net hybird     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/889" target="right">52 net vpn     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/890" target="right">53 net dedicate interconnet     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/891" target="right">54 net vlan     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/892" target="right">55 net custom role list    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/893" target="right">56 net lb backend    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/894" target="right">57 net idc gcp marketplace     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/895" target="right">58 net statckdriver alerting     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/896" target="right">59 net firewall rule     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/897" target="right">60 net cloud cdn    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/898" target="right">61 net backend server down   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/899" target="right">62 net 1 tcp socket     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/900" target="right">63 net cloud deployment manager    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/901" target="right">64 net lb    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/902" target="right">65 net tag   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/903" target="right">66 net gke   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/904" target="right">67 net managed instance group  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/905" target="right">68 net firewall rule   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/906" target="right">69 net http lb    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/907" target="right">70 net ipv6 lb global lb    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/908" target="right">71 net cloud nat , external ip     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/909" target="right">72 net shard vpc, host project     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/912" target="right">73 net network operation    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/913" target="right">74 net gsutil perfdiag    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/914" target="right">75 net http lb healthcheck     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/915" target="right">76 net shard vpc host project    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/916" target="right">77 net canary update     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/917" target="right">78 net dedicate interconnet , cloud vpn    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/918" target="right">79 net login, enable-osligin = true    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/919" target="right">80 net private google access     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/920" target="right">81 net lb, pool , backend instace  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/921" target="right">82 net stackdrive , cloud audit logs   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/922" target="right">83 net vpc, mimium money   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/924" target="right">84 net gcp role , consile , projects    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/925" target="right">85 net gcloud dns rescord-sets import     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/926" target="right">86 net bgp i, med    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/927" target="right">87 net firewall rule read , network admin    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/928" target="right">88 net ssl lb, ssl proxy   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/929" target="right">89 net cloud cdn , web server    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/930" target="right">90 net vpc peering , custom mode    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/931" target="right">91 net GKE Master not respond,  master node ip , firewal rule   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/932" target="right">92 net network operation , shard vpc  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/933" target="right">93 net client sesstion  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/934" target="right">94 net GKE , cloud armor , pod    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/935" target="right">95 net cloud nat    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/936" target="right">96 net cloud storage,min permistion , iam.service.account     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/937" target="right">97 net vpc flow log    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/938" target="right">98 net dedicate insterconnet , loa-cfa download , noc mail   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/939" target="right">99 net third-party, private service access on    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/940" target="right">100 net 2 vpn , lb , internal lb    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/941" target="right">101 net vpn, add vpn    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/942" target="right">102 net vpn, route-based vpn    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/943" target="right">103 net cloud interconnet, cloud dns     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/944" target="right">104 net tftp , network lb     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/945" target="right">105 net vpc network , full mesh vpc peering     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/946" target="right">106 net  firewall rule , security admin    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/947" target="right">107 net  public ssh , project metadata public ssh </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/948" target="right">108 net  cloud cdn,  cache invalidation     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/949" target="right">109 net  dnssec    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/950" target="right">110 net  shard vpc   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/951" target="right">111 net  voip , internal tcp/udp lb   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/952" target="right">112 net compute engine , traffic not match   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/953" target="right">113 net  (sum) gcp network   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/974" target="right">114 gcp all, start    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1132" target="right">115 1) vm    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1133" target="right">116 2) web - cli    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1134" target="right">117 3) lb - cli     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1135" target="right">118 4) ku - cli     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1136" target="right">119 5) monitroing - cli     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1137" target="right">120 6) cloud storage - console    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1138" target="right">121 7) cloud storage- cli     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1139" target="right">122 8) cloud function - console     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1140" target="right">123 9) cloud function - cli     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1141" target="right">124 10) iam    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1142" target="right">125 11) pub/sub console     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1243" target="right">126 12) pub/sub cli     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1244" target="right">127 coustom vpc    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1249" target="right">128 network  basic     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1250" target="right">129 network vpc     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1251" target="right">130 network routing     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1252" target="right">131 network vpc peering      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1253" target="right">132 network firewall     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1254" target="right">133 network dedicate      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/1256" target="right">134 gcp aws       </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1261" target="right">135 gcp bsic start        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1262" target="right">136 region        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1263 target="right">137 vpc     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1264" target="right">138 databse      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1265" target="right">139 storage       </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1266" target="right">140 compute       </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1267" target="right">141 repo     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1268" target="right">142 bigdata      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1282" target="right">143  ml      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1367" target="right">144 migration        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1282" target="right">145 ml machine learning         </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1368" target="right">146 bigquery        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1369" target="right">147 data pub/sub        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1511" target="right">148 start - vm instance        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1512" target="right">149 start - eks        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1513" target="right">150 start - app engine      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1514" target="right">151 start - monitoring       </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1515" target="right">152 start - bigquery        </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1516" target="right">153 start - cloud sql       </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1517" target="right">154 all start - all         </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1518" target="right">155 resource delete         </a><br>
+						
+												
+
+
+
+
+
+<! --  AZURE -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(3);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(3);"><font face="arial" size="3" >
+                                      Azure Cloud     
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section5" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                        	<a href="https://brunch.co.kr/@topasvga/173" target="right">1. Azure DNS   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/172" target="right">2. Azure start - 2017  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/634" target="right">3. cloud start   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/672" target="right">4. cloud security conpany   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/673" target="right">5. sec company  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/674" target="right">6. sec company   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/675" target="right">7. sec company  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/677" target="right">8. sec company  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/678" target="right">9. sec company  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/679" target="right">10. sec conpmay  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/680" target="right">11. sec company   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/681" target="right">12. sec company   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/726" target="right">13. sec company </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/676" target="right">14. sec company  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/789" target="right">15. Azure Keyword    </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/790" target="right">16. Azure Cert   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/813" target="right">17. 1. start - Azure Network   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/814" target="right">18. 2. Load Balancers  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/816" target="right">19. Azure study  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/817" target="right">20. Ms ignite   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/959" target="right">21. 1. start, azure login (1/15)  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/960" target="right">22. 2. network   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/961" target="right">23. 3. storage account   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/962" target="right">24. 4 function  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/963" target="right">25. 5 database  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/964" target="right">26. 6 advisor </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/965" target="right">27. 7 iot  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/966" target="right">28. 8 makeplace  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/967" target="right">29. 9 security  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/968" target="right">30 10 monitoring  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/969" target="right">31 11 devops  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/970" target="right">32 12 policy  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/971" target="right">33 13 bigdata, ml  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/972" target="right">34 14 money   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/973" target="right">35 15 etc info  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/975" target="right">36 ** all - basic   </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1270" target="right">37 account close </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1271" target="right">38 basic start 1/9   </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1272" target="right">39 server, container, storage, database 2/9   </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1273" target="right">40 firewall , network  3/9  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1274" target="right">41 iot, data , serverless 4/9  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1275" target="right">42 auth 5/9  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1276" target="right">43 poilcy 6/9   </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1277" target="right">44 tag, monitoring 7/9  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1278" target="right">45 money 8/9  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1279" target="right">46 tech support 9/9 </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1433" target="right">47 book azure start </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1470" target="right">48 start - account create  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1471" target="right">49 start - cloud shell, server </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1472" target="right">50 start - dev user account </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1473" target="right">51 start - resource group </a><br>							
+							<a href="https://brunch.co.kr/@topasvga/1474" target="right">52 start - azure network  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1480" target="right">53 firewall </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1481" target="right">54 securiy center  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1482" target="right">55 monitoring </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1483" target="right">56 security hipaa  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1486" target="right">57 start - rbac  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1487" target="right">58 start - vm machine </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1488" target="right">59 start - storage  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1489" target="right">60 start - rbac  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1490" target="right">61 start - av set   </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1491" target="right">62 start - av zone  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1492" target="right">63 start - load balancer  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1494" target="right">64 start - application gateway  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1495" target="right">65 start - auto scaling </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1497" target="right">66 start - traffice manager  </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1498" target="right">67 start - all, basic all   </a><br>
+							<a href="https://brunch.co.kr/@topasvga/1519" target="right">68 start - cloud test, online    </a><br>
+							
+							
+							
+							
+
+
+
+
+
+
+<! --  SOFTWARE   -- > 
+
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(4);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(4);"><font face="arial" size="3" >
+                                        SOFTWARE     
+                                </font>
+                        </td>
+                </tr>
+                <tr id="section4" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                        <a href="https://brunch.co.kr/@topasvga/287" target="right">1. Why  Software </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/126" target="right">2. Why </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/237" target="right">3. Software  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/260" target="right">4. Software  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/127" target="right">5. Service Step   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/230" target="right">6. 4th work  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/317" target="right">7. Dream  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/318" target="right">8. IT Service   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/261" target="right">9. Serive Make Man </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/289" target="right">10. It Service Makek Step   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/235" target="right">13. Server   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/234" target="right">14. Netowrk   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/358" target="right">17. AWS   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/374" target="right">18. Android Studio  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/376" target="right">21. Android Studio 2 </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/470" target="right">22. Cloud   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/478" target="right">23. IT Start   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/343" target="right">24. Windows python install  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/495" target="right">25. unity start   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/552" target="right">26. linux Master start   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/553" target="right">27. linux Master command   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/557" target="right">28. linux Master mobile homepage    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/375" target="right">29. html5 start   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/315" target="right">30. mobile homepage    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/293" target="right">31. mobile homepage    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/162" target="right">32. homepage html   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/485" target="right">33. mobile homepage 2 hour </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/647" target="right">34. money it 20  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/653" target="right">35. linux master exam1  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/654" target="right">36. linux master exam2  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/658" target="right">37. linux master command  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/665" target="right">38. windows python install  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/666" target="right">39. aws start book   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/669" target="right">40. aws start edu    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/670" target="right">41. web,ftp,mobile home page   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/667" target="right">42. it good site   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/705" target="right">43. server    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/706" target="right">44. Python 1  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/714" target="right">45. Python 2   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/722" target="right">46. Raspberry 4 install   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/723" target="right">47. Python 99 dan   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/764" target="right">48. git start    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/765" target="right">49. git pull request    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/828" target="right">50. elementary 5 6    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/834" target="right">51. middle school    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/861" target="right">52. python start book     </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/868" target="right">53. google gsuit start      </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/869" target="right">54. dev tool anaconda juypter book       </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/870" target="right">55. python janggo web   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/871" target="right">56. python file make read      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/877" target="right">57. python csv     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/878" target="right">58. python book    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1244" target="right">59. udemy study     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1247" target="right">60. unity code    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1248" target="right">61. unity tool    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1260" target="right">62. unity object    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1287" target="right">63. unity script    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1379" target="right">64. (book) aws. google , docker     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1381" target="right">65. (book) arduino     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1382" target="right">66. (sum)dev study      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1383" target="right">67. (sum) frontend dev     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1384" target="right">68. (sum) backend dev   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1385" target="right">69. (sum) devops dev    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1408" target="right">70. (jiwon) aws 1- cloud start     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1409" target="right">71. (jiwon) aws 2- server ,security    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1410" target="right">72. (edu) aws    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1412" target="right">73. (edu) jiwoon     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1417" target="right">74. (edu) (jiwon) aws 3- storage     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1428" target="right">75. (edu) conding start     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1430" target="right">76. (edu) book selete      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1439" target="right">77. (jiwon) aws 4 - network     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1451" target="right">78. (edu) book unity     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1452" target="right">79. (edu) book app dev    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1453" target="right">80. (edu) book google cloud      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1454" target="right">81. (edu) book azure start    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1455" target="right">82. (edu) book docker kub    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1456" target="right">83. (edu) book aws    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1457" target="right">84. (edu) book native    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1458" target="right">85. (edu) book devops   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1459" target="right">86. (edu) book raspberry4 iot arduino    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1460" target="right">87. (edu) network  </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1461" target="right">88. (edu) book python     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1462" target="right">89. (edu) book database   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1463" target="right">90. (edu) book html   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1464" target="right">91. (edu) book all. dev all book   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1465" target="right">92. (edu) book python game   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1475" target="right">93. (edu) book prmea after effect , designer     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1477" target="right">94. (edu) book python    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1478" target="right">95. (jiwon) aws 5 database     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1479" target="right">96. (edu) aws web service      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1485" target="right">97. (edu) design, premea    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1450" target="right">98. (jiwon) aws 6 - database2    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1451" target="right">99. (jiwon) all aws cloud      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1453" target="right">100. (edu) book azure    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1455" target="right">101. (edu) html - 1 editor      </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1505" target="right">102. (edu) python - 1 python start     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1506" target="right">103. (jiwon) - 7 dns     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1508" target="right">104. (edu) book , css  </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1520" target="right">105. (jiwon) aws - 8 load balancer , lb  </a><br>
+						
+                                </font>
+                        </td>
+
+
+                </tr>
+
+                        </td>
+                </tr>
+
+
+
+
+<! --  NAVER Cloud  -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(5);"><img src="image/menu_minus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(5);"><font face="arial" size="3" >
+                                     Naver Cloud     
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section3" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+								
+								
+							   
+							   
+							   <a href="https://brunch.co.kr/@topasvga/1389" target="right">1. naver cloud platform </a><br>
+                               <a href="https://brunch.co.kr/@topasvga/1390" target="right">2. naver cloud network </a><br>
+                               <a href="https://brunch.co.kr/@topasvga/1391" target="right">3. naver cloud compute </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1392" target="right">4. naver cloud vpc </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1393" target="right">5. naver cloud lb </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1394" target="right">6. naver cloud auto scaling </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1395" target="right">7. naver cloud storage  </a> <br>
+							   <a href="https://brunch.co.kr/@topasvga/1396" target="right">8. naver cloud database </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1397" target="right">9. naver cloud cloud insight </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1398" target="right">10.naver cloud global, security  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1399" target="right">11. naver cloud server make </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1400" target="right">12. naver cloud image make  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1401" target="right">13. naver cloud lb make  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1402" target="right">14. naver cloud platform </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1403" target="right">15. naver cloud mysql db </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1404" target="right">16. naver cloud nas storage  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1405" target="right">17. naver cloud cloud insight , mmonitoring   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1406" target="right">18. naver cloud log   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1407" target="right">19. naver auto scaling   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1415" target="right">20. naver security   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1450" target="right">21. naver account create    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1454" target="right">22. k8s install   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1524" target="right">23. live station     </a><br>
+					           
+							   
+                                </font>
+                        </td>
+                </tr>
+
+
+
+
+
+
+
+<! --  Ras PI 4   -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(6);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(6);"><font face="arial" size="3" >
+                                     Raspberry 3 , 4   
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section7" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                                <a href="https://brunch.co.kr/@topasvga/364" target="right">1. PI3 Buy,OS Install </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/164" target="right">2. LED Control </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/52" target="right">3. PI3 OS Install </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/477" target="right">4. pi3 monitor   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/701" target="right">5. pi4 install   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/852" target="right">6. pi book   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/852" target="right">6. pi book   </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/879" target="right">7. raspberry4 apache, python3  </a><br>
+                        	<a href="https://brunch.co.kr/@topasvga/722" target="right">8. os install, vnc , ssh   </a><br>
+
+<p>
+                        <a href="https://brunch.co.kr/@topasvga/474" target="right">1. Arduino  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/475" target="right">2. rc car 1  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/476" target="right">3. rc car 2  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/479" target="right">4. rc car 3  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/482" target="right">5. led 1 e </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/483" target="right">6. led 2  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/484" target="right">7. led 3  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/484" target="right">7. led 3  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/549" target="right">8. micro sensor  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/550" target="right">9. arduino to smart phone 1 </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/551" target="right">10. smart phone 2  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/846" target="right">11. arduino start   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/847" target="right">12. arduino bluetooth  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/848" target="right">13. smart phone led control  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/849" target="right">14. app enventor led on off   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/850" target="right">15. smartphone voice control    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/851" target="right">16. arduino book 1 2 3    </a><br>
+                                </font>
+                        </td>
+                </tr>
+
+
+
+
+
+
+
+
+<! --  DNS  -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(7);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(7);"><font face="arial" size="3" >
+                                      DNS   
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section9" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+
+                                <a href="https://brunch.co.kr/@topasvga/196" target="right">1.DNS Basic </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/197" target="right">2.DNS Item </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/198" target="right">3.Domain Buy /a><br>
+                                <a href="https://brunch.co.kr/@topasvga/199" target="right">4.Cache DNS, Name Server</a><br>
+                                <a href="https://brunch.co.kr/@topasvga/200" target="right">5.Cache DNS </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/201" target="right">6.Name Server </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/202" target="right">7.DNS SPF </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/203" target="right">8.DNS IP Reverse </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/204" target="right">9.DNS Name Server Check </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/205" target="right">10.DNS SpamFiltering </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/206" target="right">11.DNS Server List </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/207" target="right">12.OPEN DNS </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/208" target="right">13.DNS version </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/209" target="right">14.DNS Software Hacking </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/210" target="right">15.DNS Domain Registraion </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/211" target="right">16.DNS DDOS </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/212" target="right">17.DNS Port </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/213" target="right">18.DNS TroubleShooting  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/214" target="right">19.DNS Master  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/215" target="right">20.DNS Slave </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/216" target="right">21.DNS BIND 9.9.0 </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/217" target="right">22.Missing from hint  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/218" target="right">23.DNS Logging   </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/219" target="right">24.BIND Trouble, Firewall</a><br>
+                                <a href="https://brunch.co.kr/@topasvga/220" target="right">25.DNS AutoCheck  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/221" target="right">26.AWS DNS  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/222" target="right">27.DNS MX Config  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/223" target="right">28.Name.conf  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/224" target="right">29.Zone File  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/225" target="right">30.DNS Security  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/226" target="right">31.DNS Basic1  </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/288" target="right">32.DNS Move1 </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/321" target="right">33.DNS Move2 </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/322" target="right">34.DNS Pro </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/320" target="right">35.DNS Pro 1 </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/361" target="right">36.DNS Arch </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/363" target="right">37.DNS Move  </a><br>
+								<a href="https://brunch.co.kr/@topasvga/406" target="right">38.dns flag  </a><br>
+								<a href="https://brunch.co.kr/@topasvga/546" target="right">39.network dns  </a><br>
+								<a href="https://brunch.co.kr/@topasvga/1387" target="right">40.(sum) dns expert  </a><br>
+
+
+
+
+
+                                <font face="arial" size="2">
+
+
+<! --  INFRA   -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(8);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(8);"><font face="arial" size="3" >
+                                     INFRA   
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section9" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+
+
+                                <a href="https://brunch.co.kr/@topasvga/60" target="right">1. Service </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/61" target="right">2. INFRA Basic </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/62" target="right">3. Network </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/63" target="right">4. DNS </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/64" target="right">5. CDN </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/65" target="right">6. Tech Platform </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/66" target="right">7. JIRA </a><br>
+                                <a href="https://brunch.co.kr/@topasvga/67" target="right">8. Service Code,CMDB</a><br>
+                               <a href="https://brunch.co.kr/@topasvga/68" target="right">9. Change Management </a><br>
+                               <a href="https://brunch.co.kr/@topasvga/69" target="right">10. Monitoring </a><br>
+                               <a href="https://brunch.co.kr/@topasvga/70" target="right">11. PCI-DSS</a><br>
+                               <a href="https://brunch.co.kr/@topasvga/71" target="right">12. Fackbook OCP </a><br>
+                               <a href="https://brunch.co.kr/@topasvga/74" target="right">19. naver cloud autoscaling make    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/910" target="right"> book , all    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/911" target="right"> site , it start, dev start    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1116" target="right"> aws gcp azure start   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1242" target="right"> cloud big 3 company compare   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/634" target="right"> cloud start ?   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1429" target="right"> book company    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1510" target="right"> big company naver 15 , infra info    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1509" target="right"> network start   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1522" target="right"> all 4 cloud start - all   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1527" target="right"> aws network start - all    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1534" target="right"> aws test , licenc - all    </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1638" target="right"> 1.k8s- docker  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1646" target="right"> 2.k8s-docker2  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1648" target="right"> linux basic   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1649" target="right"> 3.k8s - kops aws k8s install  </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1658" target="right"> k8s pic   </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1667" target="right"> 4.k8s - start </a><br>
+							   <a href="https://brunch.co.kr/@topasvga/1669" target="right"> 5.k8s - pod </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1670" target="right"> 6.k8s - label , seleter </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1671" target="right"> 7.k8s - parameter  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1672" target="right"> 8.k8s - probe </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1673" target="right"> 9.k8s - init </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1674" target="right"> 10.k8s - controller  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1675" target="right"> 11.k8s - damonset  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1678" target="right"> 12.k8s - job , cron job  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1656" target="right"> k8s - docker , k8s - all </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1681" target="right"> 13.k8s - no domain , k8s install </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1682" target="right"> 14.k8s - virtual box  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1683" target="right"> 15.k8s - cluster ip  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1684" target="right"> 16.k8s - nodeport service </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1685" target="right"> 17.k8s - aws elb </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1686" target="right"> 18.k8s - dns </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1687" target="right"> book - 15 step , docker , ks8 </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1703" target="right"> 19.k8s - kubectl </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1770" target="right"> 20.k8s - ingress </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1708" target="right"> 21.k8s - ingress 2 </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1709" target="right"> 22.k8s - host routing </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1710" target="right"> 23.k8s - canari update </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1711" target="right"> 24.k8s - storage hostpath  </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1712" target="right"> 25.k8s - storage nfs </a><br>						   
+							   <a href="https://brunch.co.kr/@topasvga/1713" target="right"> 26.k8s - storage pv pvc </a><br>						   
+							   
+							   
+							   
+							   
+							   
+							   
+							   
+							   
+							   
+                                </font>
+
+<! --  COMPANY  -- > 
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(9);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(9);"><font face="arial" size="3" >
+                                      COMPANY    
+                                </font>
+                        </td>
+                </tr>
+                <tr id="section9" style="display:none;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                        <a href="https://brunch.co.kr/@topasvga/98" target="right">1. Paper work  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/99" target="right">2. mail  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/100" target="right">3. happy   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/101" target="right">4. comany culture  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/102" target="right">5. Stress  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/103" target="right">6. Happy  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/104" target="right">7. time  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/105" target="right">8. money work people  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/106" target="right">9. popple  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/107" target="right">10. die </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/108" target="right">11. evaluation  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/111" target="right">12. over eat  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/112" target="right">13. Self-respect  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/113" target="right">14. 3 action   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/114" target="right">15. enjoy your work  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/115" target="right">16. Pro  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/116" target="right">17. prepare  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/117" target="right">18. Comapany  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/118" target="right">19. Use Company  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/119" target="right">20. Salary, Work Company  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/120" target="right">21. no angle   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/121" target="right">22. grow-up  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/122" target="right">23. grow-up  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/123" target="right">24. issue  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/124" target="right">25. every day success  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/57" target="right"> company 10 issue  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/229" target="right">26. Don't go overboard  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/231" target="right">27. not fair  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/232" target="right">28. limit   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/262" target="right">29. 40  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/263" target="right">30. light  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/267" target="right">31. kongdae   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/268" target="right">32. friend  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/269" target="right">33. time  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/270" target="right">34. money 300  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/271" target="right">35. Communication  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/272" target="right">Company 20 </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/274" target="right">36. intense </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/277" target="right">37. Age 30  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/279" target="right">38. Every work  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/281" target="right">39. 45  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/282" target="right">40. Prepare  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/291" target="right">41. virtual money  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/295" target="right">42. my time  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/298" target="right">43. study  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/301" target="right">44. die  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/312" target="right">45. uneasy  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/314" target="right">46. money  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/316" target="right">47. trouble  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/324" target="right">48. today work write  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/325" target="right">49. lazy   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/326" target="right">50. look for a job  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/329" target="right">51. love   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/331" target="right">52. 3 target    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/332" target="right">53. 30  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/334" target="right">54. target 3  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/335" target="right">55. 50 pro  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/337" target="right">56. prepair  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/339" target="right">57. complete </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/340" target="right">58. 1000  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/341" target="right">59. it engineer   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/346" target="right">60. kongdae 10  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/359" target="right">61. age 30  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/360" target="right">62. 40 , 5 action    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/380" target="right">63. Stress   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/381" target="right">64. people   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/390" target="right">65. 40   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/486" target="right">66. What can i do ?   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/490" target="right">68. 10 book    </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/566" target="right">69. 40 1 </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/574" target="right">70. 40 2  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/637" target="right">71. young  worry  </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/798" target="right">72. my growup   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/862" target="right">73. action   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/954" target="right">74. 2020 it cert   </a><br>
+                        <a href="https://brunch.co.kr/@topasvga/956" target="right">75. best friend book    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1115" target="right">76. 2020 happy    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1120" target="right">77. 40 check     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1203" target="right">78. enjoy     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1280" target="right">79. 4th     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1304" target="right">80. surprise    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1305" target="right">81. gool life check   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1345" target="right">82. go first    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1351" target="right">83. walk walk  </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1376" target="right">84. dead   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1377" target="right">85. metal ok ?     </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1380" target="right">86. study , life  </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1411" target="right">87. it, work  </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1421" target="right">88. -10 kg  </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1484" target="right">89. study , covid 19    </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1502" target="right">90. it worker , good dev   </a><br>
+						<a href="https://brunch.co.kr/@topasvga/1507" target="right">91. may work , many study   </a><br>
+						
+						
+						
+						
+						
+						
+						
+						          </a><br>
+										  
+                                </font>
+                        </td>
+                </tr>
+
+
+
+                                </font>
+
+
+                                </font>
+                        </td>
+                </tr>
+
+
+<! --  Service   -- > 
+
+                <tr>
+                                <td width="9" valign="middle" class="header" onclick="openClose(10);"><img src="image/menu_plus.gif" width=9 height=9 alt="" border="1"></td>
+                                <td valign="top" class="header" onclick="openClose(10);"><font face="arial" size="3" >
+                                      check      
+                                </font>
+                        </td>
+                </tr>
+	
+                <tr id="section9" style="display:hidden;">
+                        <td width="9" valign="middle"></td>
+                        <td valign="top">
+                                <font face="arial" size="2">
+                        <a href="https://status.aws.amazon.com/#AP_bloc" target="right"> AWS  check     </a><br>
+                        <a href="https://status.azure.com/status/" target="right"> AZURE check     </a><br>
+                        <a href="https://status.cloud.google.com/" target="right"> GCP  check     </a><br>
+                                </font>
+                        </td>
+                </tr>
+
+
+
+<! --  mail   -- > 
+		<tr>
+				<td width="9" valign="middle"><img src="image/menu_none.gif" width=9 height=9 alt="" border="1"></td>
+				<td valign="top" class="header"><font face="arial" size="3" >
+					<a> topasvga@naver.com   </a>
+				</font>
+			</td>
+		</tr>
+		<tr id="section10" style="display:none;">
+			<td width="9" valign="middle"></td>
+			<td valign="top">
+				<font face="arial" size="1" >
+				</font>
+			</td>
+		</tr>
+</table>
+<br>
+</body>
+</html>
+
+
